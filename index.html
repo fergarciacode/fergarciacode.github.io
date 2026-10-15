@@ -3,61 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Fernando García-Avello Bofías | Personal Website</title>
+    <meta name="description" content="The personal website and portfolio of Fernando García-Avello Bofías.">
+    <title>Fernando García-Avello Bofías | Personal Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Home</a></li>
-                <li><a href="#experience">What Interests Me</a></li>
-                <li><a href="#experience">What I do</a></li>
-                <li><a href="#philosophy">My Philosophy, ethics and beliefs</a></li>
-                <li><a href="#portfolio">Random stuff</a></li>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="site-brand" href="#home" aria-label="Fernando García-Avello Bofías, home">FG</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">About</a></li>
+                <li><a href="academic/">Academic work</a></li>
+                <li><a href="art/">Art</a></li>
+                <li><a href="blog/">Blog</a></li>
+                <li><a href="other-things/">Other things</a></li>
+                <li><a href="#mi-grafo-git">Life graph</a></li>
             </ul>
+            <div class="language-links" aria-label="Language">
+                <a href="es/index.html" lang="es">ES</a>
+                <a href="en/index.html" lang="en">EN</a>
+            </div>
         </nav>
-        <div>
-            <a href="es/index.html">🇪🇸 Español</a>
-        </div>
+
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <div class="portrait-placeholder" role="img" aria-label="Temporary portrait placeholder">FG</div>
+                <p class="hero-eyebrow">Personal website &amp; portfolio</p>
+                <h1 id="hero-title">Fernando García-Avello Bofías</h1>
+                <p class="hero-roles">Physicist <span aria-hidden="true">·</span> Psychologist <span aria-hidden="true">·</span> Artist</p>
+                <a class="hero-link" href="#mi-grafo-git">Explore my life graph <span aria-hidden="true">↓</span></a>
+            </div>
+        </section>
     </header>
 
     <main>
+        <section class="content-section profile-section" id="profile" aria-labelledby="profile-title">
+            <p class="section-eyebrow">About</p>
+            <h2 id="profile-title">Why are you here? About this site</h2>
+            <!-- <p>What brings you here ?  If it is for my academic and professional work go to (there I have my publications).
+                If it is to buy my art go to: art. If it is for my phylosphy, and or for my social initiatives go to:
+            </p> -->
 
-        <section id="about">
-            <h1>Hi, I'm Fernando</h1>
-            <h2>Physicist | Psychologist | Artist </h2>
-            <p>Just a very curious human being. </p>
+            <h3>About Me</h3>
+            <p> Site in Construction
+
+            </p>
+            <!-- <p>I am Fernando, a very curious human being. Since a young age I rejoiced in contemplating my experience in this world, both like an expectator and player in my life.
+                I've always been curious and liked to observe my surroundings. But in my teens, as I mature I started to question things
+                more deeply, my hunger for satisfactory answers started there, thanks in part to science divulgation TV shows, such as the famous REDES
+                by Eduardo Punset (I even subscribed to their journal where they)
+                This curiosity led me first to phylosphy, Which let's not lie Big Bang theory also played a crucial role in choosing
+                Physics.
+                The more I study and the more I think, arriving to the limits of science, philosphy and the mind, the more I understood that there are certain questions that don't have answer or don't make sense,
+                or that knowledge is contextual. Categories are not rigid, Hard to fit in your models.
+
+                This website is a reflection of some of my phylosphy and things that I have learned.
+                As you can experience in this own website I don't like fixed categories. I believe categories are contextual
+                and dynamic, and it is about time we start working with them in this way.
+            </p> -->
         </section>
 
-        <section id="philosophy">
-            <h2>My Philosophy</h2>
-            <blockquote>
-                "Here you can put a quote or a core belief that guides your work and life."
-            </blockquote>
-            <p>Elaborate a bit more on how you approach problems, teamwork, or creativity.</p>
-        </section>
+        <!-- <section class="life-graph-section" id="mi-grafo-git" aria-labelledby="life-graph-title">
+            <div class="life-graph-heading">
+                <p class="section-eyebrow">A Git-inspired timeline</p>
+                <h2 id="life-graph-title">My life graph</h2>
+                <p class="life-graph-intro">Milestones across parallel branches of my life. Select a branch to focus on it.</p>
+            </div>
+            <iframe src="lifegraph/tree.html" title="Interactive life graph" class="grafo-embed"></iframe>
+        </section> -->
 
-        <section id="experience">
-            <h2>Education & Experience</h2>
-            
-            <h3>Work Experience</h3>
-            <ul>
-                <li><strong>Job Title</strong> at Company Name (2024 - Present)</li>
-                <li><strong>Job Title</strong> at Company Name (2022 - 2024)</li>
-            </ul>
-
-            <h3>Education</h3>
-            <ul>
-                <li><strong>Degree Name</strong> - University/School (2018 - 2022)</li>
-            </ul>
-        </section>
-
+        <!-- <section class="content-section notes-section">
+            <h2>Cosas que añadir:</h2>
+            <p>Hacerme cuenta @proton.me y ponerla aquí abierta al público.</p>
+            <p>Mis lecturas recomendadas</p>
+            <p>If you want my CV send me an email stating the company and offer you are thinking.</p>
+        </section> -->
     </main>
 
-    <footer>
-        <p>&copy; 2026 Fernando García-Avello Bofías. Built with HTML.</p>
+    <footer class="site-footer">
+        <p>No AI was harmed in the production of this site.</p>
+        <p>&copy; 2026 Fernando García-Avello Bofías.</p>
     </footer>
-
+    <script src="assets/js/hero-background.js"></script>
+    <script src="assets/js/lifegraph-embed.js"></script>
 </body>
 </html>
